@@ -42,6 +42,7 @@ namespace XFContacts2
 
         private void lstContact_ItemTapped(object sender, ItemTappedEventArgs e)
         {
+            
             DisplayAlert("Tapped", "Tapped", "Ok");
         }
 

@@ -19,7 +19,7 @@
                     <DataTemplate>
                         <ViewCell>
                             <StackLayout>
-                                <Label Text="{Binding Name}" Margin="0,2,0,4" />
+                                <Label Text="{Binding Name}" />
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>
