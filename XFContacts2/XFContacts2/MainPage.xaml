@@ -4,8 +4,29 @@
              xmlns:local="clr-namespace:XFContacts2"
              x:Class="XFContacts2.MainPage">
 
-	<Label Text="Welcome to Xamarin Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <ContentPage.Content>
+        <StackLayout Padding="5">
+
+            <!-- TODO
+            <StackLayout Padding="5" Spacing="2">
+                <SearchBar Placeholder="Pesquisar por contato" />
+            </StackLayout>
+            -->
+
+            <ListView x:Name="lstContact" 
+                      ItemTapped="lstContact_ItemTapped">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Label Text="{Binding Name}" Margin="0,2,0,4" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+
 
 </ContentPage>
